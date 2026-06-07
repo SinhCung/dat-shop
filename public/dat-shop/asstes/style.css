@@ -1,0 +1,275 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f5f2ec;
+  color:#4b1e1e;
+  font-family:'Poppins',sans-serif;
+}
+
+header{
+  width:100%;
+  padding:25px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#f5f2ec;
+  z-index:1000;
+  border-bottom:1px solid #e6ddd2;
+}
+
+.logo{
+  font-size:34px;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+  letter-spacing:2px;
+  color:#7a0c0c;
+}
+
+nav ul{
+  display:flex;
+  gap:40px;
+  list-style:none;
+}
+
+nav ul li{
+  position:relative;
+}
+
+nav a{
+  text-decoration:none;
+  color:#4b1e1e;
+  font-size:15px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#7a0c0c;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:30px;
+  left:0;
+
+  background:white;
+
+  min-width:180px;
+
+  display:flex;
+  flex-direction:column;
+
+  padding:10px 0;
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:translateY(10px);
+
+  transition:0.3s;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  z-index:999;
+}
+
+.dropdown-menu li{
+  width:100%;
+}
+
+.dropdown-menu a{
+  display:block;
+  padding:12px 20px;
+}
+
+.dropdown-menu a:hover{
+  background:#f5f2ec;
+  padding-left:28px;
+}
+
+.dropdown:hover .dropdown-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+
+
+
+.hero{
+  width:100%;
+  height:1250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 10%;
+  background:
+  linear-gradient(rgba(245,242,236,.75),
+  rgba(245,242,236,.75)),
+  url('/dat-shop/asstes/img/logo.jpg') center/cover;
+}
+
+.hero-content h1{
+  font-size:80px;
+  font-family:'Cormorant Garamond',serif;
+  color:#7a0c0c;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:18px;
+  margin-bottom:35px;
+  letter-spacing:2px;
+}
+
+.btn{
+  padding:14px 40px;
+  border:none;
+  background:#7a0c0c;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#541010;
+}
+
+.products{
+  padding:100px 8%;
+}
+
+.section-title{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:60px;
+  font-family:'Cormorant Garamond',serif;
+  color:#7a0c0c;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:20px;
+  text-align:center;
+}
+
+.card-content h3{
+  font-size:22px;
+  font-family:'Cormorant Garamond',serif;
+  margin-bottom:10px;
+}
+
+.price{
+  color:#7a0c0c;
+  font-weight:500;
+}
+
+footer{
+  background:#eee5db;
+  padding:70px 8%;
+  text-align:center;
+  margin-top:60px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+}
+
+footer h2{
+  font-size:45px;
+  font-family:'Cormorant Garamond',serif;
+  color:#7a0c0c;
+  letter-spacing:2px;
+}
+
+footer p{
+  color:#666;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+footer img{
+  width:180px;
+  margin-top:10px;
+
+  border-radius:12px;
+
+  background:white;
+  padding:10px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+  transition:0.3s;
+}
+
+footer img:hover{
+  transform:scale(1.05);
+}
+
+footer a{
+  color:#7a0c0c;
+  text-decoration:none;
+  font-weight:500;
+  margin-left:5px;
+  transition:0.3s;
+}
+
+footer a:hover{
+  color:#541010;
+  text-decoration:underline;
+}
+
+
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav ul{
+    gap:20px;
+  }
+
+  .hero-content h1{
+    font-size:50px;
+  }
+
+  .section-title{
+    font-size:40px;
+  }
+
+}
