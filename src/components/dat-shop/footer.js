@@ -4,7 +4,7 @@ function Footer (){
     <footer>
         <h2>SWEATER.DAOATHU</h2>
         <p>©fanpape link:<a href="https://www.facebook.com/share/1BNVCqxoyJ/?mibextid=wwXIfr" target="_blank" rel="noreferrer" > DAOATHU </a></p>
-        <img src="/asstes/img/qr.png" alt="" />
+        <img src="/dat-shop/asstes/img/qr.png" alt="" />
     </footer>
     );
 };
